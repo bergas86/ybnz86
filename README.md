@@ -44,6 +44,7 @@
 
 ## ..................
 
+## GITHUB.COM
 
 - Selanjunya kita beralih github.com *pastikan kalian punya akun di Github.com <<
 - Pada laman github, klik tombol start a project, atau dari menu (icon +) kilk New Repository
