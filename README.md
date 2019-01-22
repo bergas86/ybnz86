@@ -17,29 +17,33 @@
 
 >> Maka akan muncul jendela git bash
 	kita buat projek pertama dengan nama latihan01
+
 		>> Config : $ mkdir latihan01
 		>>	   $ cd latihan01
+
 	sehingga terbentuk satu direktori baru dibawahnya "d/labs_pemrograman1/latihan01"
 
->> Selanjutnya, membuat reposiory local
-	- jalankan perintah "git init" (tanpa tanda " ) ,  untuk membuat repository local. Maka akan terbentuknya satu direktori hidden dengan nama .git
-	- kemudian menambahkan file baru pada repository. *disini kita akan menamakan file README.md
+## Selanjutnya, membuat reposiory local ##
+
+- jalankan perintah "git init" (tanpa tanda " ) ,  untuk membuat repository local. Maka akan terbentuknya satu direktori hidden dengan nama .git
+
+- kemudian menambahkan file baru pada repository. *disini kita akan menamakan file README.md
 
 		>> Config : $ echo "#latihan01" >> README.md
 
-	- selanjutnya, menambahkan file baru pada repository
+- selanjutnya, menambahkan file baru pada repository
 
 		>> Config : $ git add README.md
 
-	- menyimpan perubahan ke database
+- menyimpan perubahan ke database
 
 		>> Config : $ git commit -m "File pertama Saya"
 
-##............##
+## ............ ##
 
-##...............##
+## ............... ##
 
-##..................##
+## .................. ##
 
 
 >> Selanjunya kita beralih github.com *pastikan kalian punya akun di Github.com <<
