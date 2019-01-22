@@ -17,25 +17,26 @@
 
 - Config :
 
-	$ mkdir latihan01
-	$ cd latihan01
+		$ mkdir latihan01
 
-	sehingga terbentuk satu direktori baru dibawahnya "d/labs_pemrograman1/latihan01"
+		$ cd latihan01
+
+		sehingga terbentuk satu direktori baru dibawahnya "d/labs_pemrograman1/latihan01"
 
 ## Selanjutnya, membuat reposiory local
 
 - jalankan perintah "git init" (tanpa tanda " ) ,  untuk membuat repository local. Maka akan terbentuknya satu direktori hidden dengan nama .git
 - kemudian menambahkan file baru pada repository. *disini kita akan menamakan file README.md
 
-		>> Config : $ echo "#latihan01" >> README.md
+		 Config : $ echo "#latihan01" >> README.md
 
 - selanjutnya, menambahkan file baru pada repository
 
-		>> Config : $ git add README.md
+		 Config : $ git add README.md
 
 - menyimpan perubahan ke database
 
-		>> Config : $ git commit -m "File pertama Saya"
+		 Config : $ git commit -m "File pertama Saya"
 
 ## ............
 
@@ -50,11 +51,11 @@
 
 - Menambahkan Remote Repository
 
-	>> Config $ git remote add origin http://github.com/.........git
+		Config $ git remote add origin http://github.com/.........git
 
 - Push (Mengirim perubahan ke Server)
 
-	>> Config $ git push -u origin master
+		Config $ git push -u origin master
 
 - Buka laman Github.com , arahkan pada repositoriny, makan perubahan pada laman terbut
 
