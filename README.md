@@ -1,6 +1,6 @@
-#latihan01
+# latihan01 #
 
-##Tutorial Penggunaan git (README.md)##
+## Tutorial Penggunaan git (README.md) ##
 
 >> Pertama-tama kita download dan instal terlebih dahulu Aplikasi Git sesuai PC masing-masing (https://git-scm*com/) * ganti .
 
@@ -58,6 +58,6 @@
 
 >> Buka laman Github.com , arahkan pada repositoriny, makan perubahan pada laman terbut
 
-##SEKIAN DAN TERIMAKASIH##
-##HAPPY CODING##
-##HELLO WORLD##
+## SEKIAN DAN TERIMAKASIH ##
+## HAPPY CODING ##
+## HELLO WORLD ##
