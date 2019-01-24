@@ -1,68 +1,98 @@
-# latihan01
+#latihan01
 
-## Tutorial Penggunaan git (README.md)
+ ## Menambahkan Global Config ##
+- Pertama-tama kita download dan instal terlebih dahulu Aplikasi Git sesuai PC masing-masing (https://git-scm.com/)
 
-- Pertama-tama kita download dan instal terlebih dahulu Aplikasi Git sesuai PC masing-masing (https://git-scm*com/) * ganti .
-- Pada saat pertama kali menggunakan git, perlu dilakukan konfigurasi user.name dan user.email akun "Github"
+![alt teks](git-scm.png "Contoh gambar 1.0")
 
-- Config :
+- Pada saat pertama kali menggunakan git, perlu dilakukan konfigurasi user.name dan user.email 
+- konfigurasi ini bisa dilakukan untuk global repostiry atau individual repository. 
+- apabila belum dilakukan konfigurasi, akan mengakibatkan terjadi kegagalan saat menjalankan perintah git commit
+- Config Global Repository 
 
-		 $ git config --global user.name "Nama User Github kalian"
-		 $ git config --global user.email "Contoh@gmail.co.id"
+	 >> $ git config --global user.name “nama_user”
 
-![alt text](1.png "contoh gambar 1.0")
+	 >> $ git config --global user.email “nama_user”
 
+## Perintah Dasar Git ##
+- git init, perintah untuk membuat repository local 
+- git add, perintah untuk menambahkan file baru, atau perubahan pada file pada staging sebelum proses commit. 
+- git commit, perintah untuk menyimpan perubahan kedalam database git. 
+- git push -u origin master, perintah untuk mengirim perubahan pada repository local menuju server repository. 
+- git clone [url], perintah untuk membuat working directory yang diambil dari repositry sever. 
+- git remote add origin [url], perintah untuk menambahkan remote server/repository server pada local repositry (working directory) 
 
-- Kemudian buat forlder baru "labs_pemrograman1"
-- Kemudian klik kanan pada folder tersebut dan pilih "Git Bash Here"
-- Maka akan muncul jendela git bash
-- kita buat projek pertama dengan nama latihan01
+## Membuat Reposiory Local ##
+- Buka direktory aktif, misal: d:\labs_pemrograman1 (buka menggunakan Windows Explorer) 
+- klik kanan pada direktory aktif tersebut, dan pilih menu Git Bash, sehingga muncul git bash command 
+- Buat direktory project praktikum pertama dengan nama latihan1
+- Sehingga terbentuk satu direktori baru dibawahnya, selanjutnya masuk kedalam direktori tersebut dengan perintah cd (change directory) 
+- direktory aktif menjadi: d:\labs_pemrograman1\latihan1
 
-- Config :
+	>> $ mkdir latihan1
+ 
+	>> $ cd latihan1
 
-		$ mkdir latihan01
+## Membuat Reposiory Local ##
+- Jalankan perintah git init, untuk membuat repository local.
+- Repository baru berhasil di inisialisasi, dengan terbentuknya satu direktori hidden dengan nama .git 
+- Pada direktori tersebut, semua perubahan pada working directory akan disimpan. 
 
-		$ cd latihan01
+	>> $ git init
 
-		sehingga terbentuk satu direktori baru dibawahnya "d/labs_pemrograman1/latihan01"
+## Menambahkan File baru pada repository ##
+- Untuk membuat file dapat menggunakan text editor, lalu menyimpan filenya pada direktori aktif (repository) 
+- disini kita akan coba buat satu file bernama README.md (text file)
 
-## Selanjutnya, membuat reposiory local
+	>> $ echo “#Latihan 1” >> README.md
 
-- jalankan perintah "git init" (tanpa tanda " ) ,  untuk membuat repository local. Maka akan terbentuknya satu direktori hidden dengan nama .git
-- kemudian menambahkan file baru pada repository. *disini kita akan menamakan file README.md
+- File README.md berhasil dibuat. 
 
-		 Config : $ echo "#latihan01" >> README.md
+## Menambahkan File baru pada repository ##
+- Untuk menambahkan file yang baru saja dibuat tersebut gunakan perintah git add.
 
-- selanjutnya, menambahkan file baru pada repository
+	>> $ git add README.md
 
-		 Config : $ git add README.md
+- File README.md berhasil ditambahkan. 
+	
+## Commit (Menyimpan perubahan ke database) ##
+- Untuk menyimpan perubahan yang ada kedalam database repository local, gunakan perintah git commit -m “komentar commit”
+- Perubahan berhasil disimpan. 
 
-- menyimpan perubahan ke database
+	>> $ git commit -m “File pertama saya”
 
-		 Config : $ git commit -m "File pertama Saya"
+## Membuat repository server ##
+- Server reopsitory yang akan kita gunakan adalah http://github.com 
+- Anda harus membuat akun terlebih dahulu. 
+- Pada laman github, klik tombol start a project, atau 
+- Dari menu (icon +) klik New Repository
 
-## ............
+## Membuat repository server ##
+- Isi nama repositorynya, misal: labpy1. 
+- lalu klik tombol Create repository
 
-## ...............
+## Menambahkan Remote Repository ##
+- Remote Repository merupakan repository server yang akan digunakan untuk menyimpan setiap perubahan pada local repository, sehingga dapat diakses oleh banyak user. 
+- Untuk menambahkan remote repository server, gunakan perintah git remote add origin [url]
 
-## ..................
+	>> $ git remote add origin https://github.com/..../.....git
 
-## GITHUB.COM
+## Push (Mengirim perubahan ke server) ##
+- Untuk mengirim perubahan pada local repository ke server gunakan perintah git push.
+- Perintah ini akan meminta memasukkan username dan password pada akun github.com 
 
-- Selanjunya kita beralih github.com *pastikan kalian punya akun di Github.com <<
-- Pada laman github, klik tombol start a project, atau dari menu (icon +) kilk New Repository
-- Isi nama repository kalian, lalu kilk tombol Create Repository
+	>> $ git push -u origin master
 
-- Menambahkan Remote Repository
+## Melihat hasilnya pada server repository ##
+- Buka laman github.com, arahkan pada repositorinya. 
+- Maka perubahan akan terlihat pada laman tersebut.
 
-		Config $ git remote add origin http://github.com/.........git
+## Clone Repository ##
+- Clone repository, pada dasarnya adalah meng-copy repository server dan secara otomatis membuat satu direktory sesuai dengan nama repositorynya (working directory). 
+- Untuk melakukan cloning, gunakan perintah git clone [url]
 
-- Push (Mengirim perubahan ke Server)
-
-		Config $ git push -u origin master
-
-- Buka laman Github.com , arahkan pada repositoriny, makan perubahan pada laman terbut
-
-## SEKIAN DAN TERIMAKASIH
-## HAPPY CODING
-## HELLO WORLD
+## Kegunaan file README.md ##
+- Apabila kita menggunakan github, untuk memberikan penjelasan awal pada project yang kita buat, maka dapat menggunakan sebuah file yang bernama README.md 
+- Pada file tersebut kita dapat membuat dokumentasi awal dari setiap project yang kita buat untuk memberikan penjelasan atau sekedar cara penggunaan dari aplikasi yang kita kembangkan. 
+- Penulisan file README.md berbasis teks, dan untuk pemformatannya menggunakan Markdown format. 
+- untuk lebih jelasnya, dapat anda pelajari cara penggunaan markdown pada url berikut: https://guides.github.com/features/masteringmarkdown/
