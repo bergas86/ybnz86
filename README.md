@@ -10,48 +10,48 @@
 - apabila belum dilakukan konfigurasi, akan mengakibatkan terjadi kegagalan saat menjalankan perintah git commit
 - Config Global Repository 
 
-	 >> $ git config --global user.name “nama_user”
+	 	$ git config --global user.name “nama_user”
 
-	 >> $ git config --global user.email “nama_user”
+	 	$ git config --global user.email “nama_user”
 
 ## Perintah Dasar Git ##
-- git init, perintah untuk membuat repository local 
+- ![#f03c15] (git init), perintah untuk membuat repository local 
 - git add, perintah untuk menambahkan file baru, atau perubahan pada file pada staging sebelum proses commit. 
 - git commit, perintah untuk menyimpan perubahan kedalam database git. 
 - git push -u origin master, perintah untuk mengirim perubahan pada repository local menuju server repository. 
 - git clone [url], perintah untuk membuat working directory yang diambil dari repositry sever. 
 - git remote add origin [url], perintah untuk menambahkan remote server/repository server pada local repositry (working directory) 
 
-## Membuat Reposiory Local ##
+## Membuat Reposiotry Local ##
 - Buka direktory aktif, misal: d:\labs_pemrograman1 (buka menggunakan Windows Explorer) 
 - klik kanan pada direktory aktif tersebut, dan pilih menu Git Bash, sehingga muncul git bash command 
 - Buat direktory project praktikum pertama dengan nama latihan1
 - Sehingga terbentuk satu direktori baru dibawahnya, selanjutnya masuk kedalam direktori tersebut dengan perintah cd (change directory) 
 - direktory aktif menjadi: d:\labs_pemrograman1\latihan1
 
-	>> $ mkdir latihan1
+		$ mkdir latihan1
  
-	>> $ cd latihan1
+		$ cd latihan1
 
-## Membuat Reposiory Local ##
+## Membuat Repository Local ##
 - Jalankan perintah git init, untuk membuat repository local.
 - Repository baru berhasil di inisialisasi, dengan terbentuknya satu direktori hidden dengan nama .git 
 - Pada direktori tersebut, semua perubahan pada working directory akan disimpan. 
 
-	>> $ git init
+		$ git init
 
 ## Menambahkan File baru pada repository ##
 - Untuk membuat file dapat menggunakan text editor, lalu menyimpan filenya pada direktori aktif (repository) 
 - disini kita akan coba buat satu file bernama README.md (text file)
 
-	>> $ echo “#Latihan 1” >> README.md
+		$ echo “#Latihan 1” >> README.md
 
 - File README.md berhasil dibuat. 
 
 ## Menambahkan File baru pada repository ##
 - Untuk menambahkan file yang baru saja dibuat tersebut gunakan perintah git add.
 
-	>> $ git add README.md
+		$ git add README.md
 
 - File README.md berhasil ditambahkan. 
 	
@@ -59,7 +59,7 @@
 - Untuk menyimpan perubahan yang ada kedalam database repository local, gunakan perintah git commit -m “komentar commit”
 - Perubahan berhasil disimpan. 
 
-	>> $ git commit -m “File pertama saya”
+		$ git commit -m “File pertama saya”
 
 ## Membuat repository server ##
 - Server reopsitory yang akan kita gunakan adalah http://github.com 
@@ -75,13 +75,13 @@
 - Remote Repository merupakan repository server yang akan digunakan untuk menyimpan setiap perubahan pada local repository, sehingga dapat diakses oleh banyak user. 
 - Untuk menambahkan remote repository server, gunakan perintah git remote add origin [url]
 
-	>> $ git remote add origin https://github.com/..../.....git
+		$ git remote add origin https://github.com/..../.....git
 
 ## Push (Mengirim perubahan ke server) ##
 - Untuk mengirim perubahan pada local repository ke server gunakan perintah git push.
 - Perintah ini akan meminta memasukkan username dan password pada akun github.com 
 
-	>> $ git push -u origin master
+		$ git push -u origin master
 
 ## Melihat hasilnya pada server repository ##
 - Buka laman github.com, arahkan pada repositorinya. 
