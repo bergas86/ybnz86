@@ -10,12 +10,12 @@
 - apabila belum dilakukan konfigurasi, akan mengakibatkan terjadi kegagalan saat menjalankan perintah git commit
 - Config Global Repository 
 
-	 	$ git config --global user.name “nama_user”
+	 	$ git config --global user.name â€œnama_userâ€
 
-	 	$ git config --global user.email “nama_user”
+	 	$ git config --global user.email â€œnama_userâ€
 
 ## Perintah Dasar Git ##
-- git init, perintah untuk membuat repository local 
+- [git init](#f03c15), perintah untuk membuat repository local 
 - git add, perintah untuk menambahkan file baru, atau perubahan pada file pada staging sebelum proses commit. 
 - git commit, perintah untuk menyimpan perubahan kedalam database git. 
 - git push -u origin master, perintah untuk mengirim perubahan pada repository local menuju server repository. 
@@ -44,7 +44,7 @@
 - Untuk membuat file dapat menggunakan text editor, lalu menyimpan filenya pada direktori aktif (repository) 
 - disini kita akan coba buat satu file bernama README.md (text file)
 
-		$ echo “#Latihan 1” >> README.md
+		$ echo â€œ#Latihan 1â€ >> README.md
 
 - File README.md berhasil dibuat. 
 
@@ -56,10 +56,10 @@
 - File README.md berhasil ditambahkan. 
 	
 ## Commit (Menyimpan perubahan ke database) ##
-- Untuk menyimpan perubahan yang ada kedalam database repository local, gunakan perintah git commit -m “komentar commit”
+- Untuk menyimpan perubahan yang ada kedalam database repository local, gunakan perintah git commit -m â€œkomentar commitâ€
 - Perubahan berhasil disimpan. 
 
-		$ git commit -m “File pertama saya”
+		$ git commit -m â€œFile pertama sayaâ€
 
 ## Membuat repository server ##
 - Server reopsitory yang akan kita gunakan adalah http://github.com 
