@@ -15,7 +15,7 @@
 	 	$ git config --global user.email “nama_user”
 
 ## Perintah Dasar Git ##
-- ![#f03c15] (git init), perintah untuk membuat repository local 
+- ![#f03c15 git init], perintah untuk membuat repository local 
 - git add, perintah untuk menambahkan file baru, atau perubahan pada file pada staging sebelum proses commit. 
 - git commit, perintah untuk menyimpan perubahan kedalam database git. 
 - git push -u origin master, perintah untuk mengirim perubahan pada repository local menuju server repository. 
