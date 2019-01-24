@@ -1,7 +1,7 @@
 #latihan01
 
  ## Menambahkan Global Config ##
-- Pertama-tama kita download dan instal terlebih dahulu Aplikasi Git sesuai PC masing-masing (https://git-scm.com/)
+- Pertama-tama kita download dan instal terlebih dahulu Aplikasi Git sesuai PC masing-masing. [Link](https://git-scm.com/)
 
 ![alt teks](git-scm.png "Contoh gambar 1.0")
 
