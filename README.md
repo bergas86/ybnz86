@@ -10,6 +10,9 @@
 		 $ git config --global user.name "Nama User Github kalian"
 		 $ git config --global user.email "Contoh@gmail.co.id"
 
+![alt text](1.png "contoh gambar 1.0")
+
+
 - Kemudian buat forlder baru "labs_pemrograman1"
 - Kemudian klik kanan pada folder tersebut dan pilih "Git Bash Here"
 - Maka akan muncul jendela git bash
